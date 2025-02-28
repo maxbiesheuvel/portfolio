@@ -6,7 +6,7 @@
 
 body {
     background-color: White;
-    font-family: calibril, Verdana, Helvetica, sans-serif;
+    font-family: Roboto, Verdana, Helvetica, sans-serif;
 }
 
 p {
@@ -21,7 +21,7 @@ p.thick {
 }
 
 header {
-  	font-family: BebasNeue;
+  	font-family: Bebas Neue;
     font-size: 50px;
     background-color: #4484CE;
     width: 100%;
@@ -43,7 +43,7 @@ main {
     border-right: 6px solid #D9D9D9;
 }
 
-section:after {
+section: after {
     content: "";
     display: table;
     clear: both;
@@ -60,7 +60,7 @@ ul {
 }
 
 li {
-    font-family: calibrib;
+    font-family: Roboto;
     display: inline;
     float: left;
 }
@@ -182,20 +182,17 @@ input[type=submit]:hover {
     }
 }
 
-@font-face {
-	font-family: BebasNeue;
-	src: url(bebas_neue/TTF/BebasNeue_Regular.ttf);
-	font-weight: normal;
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-@font-face {
-  font-family: calibril;
-  src: url(calibri/calibril.ttf);
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: calibrib;
-  src: url(calibri/calibrib.ttf);
-  font-weight: normal;
+.roboto-<uniquifier> {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
