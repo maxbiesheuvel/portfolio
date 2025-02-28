@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+
+  <header>
+    <h1>MAX BIESHEUVEL</h1>
+  </header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li style="float:right"><a class="active" href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+<main>
+  <div class="container">
+    <div style="text-align:center">
+      <h2>Leave a message!</h2>
+      <p>Here you can say how much you hate of appriciate my website:</p>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div id="map" style="width:100%;height:500px"></div>
+      </div>
+      <div class="column">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="netherlands">Netherlands</option>
+            <option value="belgium">Belgium</option>
+            <option value="germany">Germany</option>
+          </select>
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="Message" placeholder="Write something.." style="height:170px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Initialize Google Maps -->
+  <script>
+  function myMap() {
+    var myCenter = new google.maps.LatLng(52.241684,6.852169);
+    var mapCanvas = document.getElementById("map");
+    var mapOptions = {center: myCenter, zoom: 14};
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+    var marker = new google.maps.Marker({position:myCenter});
+    marker.setMap(map);
+  }
+  </script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+  <!--
+  To use this code on your website, get a free API key from Google.
+  Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+  -->
+</main>
+</section>
+
+<footer>
+  <div class="clearfix">
+    <a target="_blank" href="https://www.instagram.com/maxbiesheuvel/">
+      <img src="img/instagram.png" style="align: center;" width="30" height="30" alt="Instagram logo">
+    </a>
+  </div>
+</footer>
+
+</body>
+</html>

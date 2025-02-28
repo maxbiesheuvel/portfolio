@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyDv6lIEzMk8-_8e9fCj6nO5pyWVtUQZUlM",
+      authDomain: "portfolio-website-1ecfd.firebaseapp.com",
+      projectId: "portfolio-website-1ecfd",
+      storageBucket: "portfolio-website-1ecfd.firebasestorage.app",
+      messagingSenderId: "60051634032",
+      appId: "1:60051634032:web:7e292f3e8085b4d6ac41b5",
+      measurementId: "G-MF0K6Y8LG5"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+  <header>
+    <h1>MAX BIESHEUVEL</h1>
+  </header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a class="active" href="portfolio.html">Portfolio</a></li>
+      <li style="float:right"><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="blog">
+      <div class="clearfix" style="padding:20px">
+      <h1 class="blog">Posture Coach</h1>
+       <p>For module 6 of CreaTe we developed an exercise assistant for personal use in gyms. The goal of our project was to help people who
+        go to the gym in improving their posture, to reduce the number of injuries that are sustained in the gym. We created a lo-fi and high-fi prototype you can see here. An UI 
+        created in Figma.
+        </p>
+       <a target="_blank" href="img/UI Prototype.PNG">
+         <img src="img/UI Prototype.PNG" ALIGN=”right” title="Full size" class="blogimg" width="400" height="300">
+       </a>
+       <a target="_blank" href="img/squat.gif">
+        <img src="img/squat.gif" ALIGN=”right” title="Full size" class="blogimg" width="400" height="300">
+      </a>
+     </div>
+    </div>
+    <div class="blog">
+      <div class="clearfix" style="padding:20px">
+      <h1 class="blog">Smart Technology Hackaton</h1>
+       <p>On March 22 I visited the IBM headquarters in Amsterdam together with my project group. It was quite
+        inspiring to meet Manfred Overmeen, the man that gave us the assignment for our project. He had
+        his own office that was full of gadgets and gizmos. For example, at the entrance we were greeted
+        by a speaking robot. A lot of technology in that room was stuff we covered in the study, like the
+        arduinos laying around. Apart from being very useful for our project, the visit really showed me a
+        job that resembles Creative Technology.
+        </p>
+       <a target="_blank" href="video/Team Toverdoos.mp4">
+        <video width="480" height="270" ALIGN=”right” controls>
+          <source src="video/Team Toverdoos.mp4" type="video/mp4">
+        </video>
+       </a>
+     </div>
+    </div>
+    <div class="blog">
+      <div class="clearfix" style="padding:20px">
+      <h1 class="blog">uChange at GOGBOT 2019</h1>
+       <p>For module 4 of CreaTe we demo-ed our project installation on GOGBOT 2019 in Enschede. That year's theme was Bio-technology and info-technology. The interactions we incorporated into our design are:
+        <br> 1. Making a character using the touch screen<br> 2.Physically changing the DNA spiral
+        <br> The reason we chose to use a touch screen is the fact that it is easy to understand because everyone is used to using a touch screen nowadays furthermore it is easy to adjust if necessary.
+        The reason for choosing to physically change the DNA spiral is to make it fun for the participant to use and to have a unique way of interacting instead of buttons or levers.The reason this may be fun is that it is something physical. By being able to feel what you are doing you feel like you have more control over the installation.
+        
+        </p>
+       <a target="_blank" href="img/UChange-Poster2.jpg">
+         <img src="img/UChange-Poster2.jpg" ALIGN=”right” title="Full size" class="blogimg" width="300" height="400">
+       </a>
+     </div>
+    </div>
+    <div class="blog">
+      <div class="clearfix" style="padding:20px">
+      <h1 class="blog">Project at IBM</h1>
+       <p>On March 22 I visited the IBM headquarters in Amsterdam together with my project group. It was quite
+        inspiring to meet Manfred Overmeen, the man that gave us the assignment for our project. He had
+        his own office that was full of gadgets and gizmos. For example, at the entrance we were greeted
+        by a speaking robot. A lot of technology in that room was stuff we covered in the study, like the
+        arduinos laying around. Apart from being very useful for our project, the visit really showed me a
+        job that resembles Creative Technology. <br>
+        Below you can read our project summary: <br>
+        For IBM’s personal request to gain insight into the ‘wellbeing at IBM’ a system has been developed that can interpret banking transactions and analyse them for caffeïne-containing consumptions. The gathering is based on the new Payment Service Directive (PSD2) that allows users to open up bank transactions for programmes to read. Rather than allowing companies to analyse for consumer behaviour, this system operates at a strictly personal level. This allows the system, named Spess, to analyse for and provide feedback on its user's behaviour, similar to - yet less obtrusive than - a personal coach. Feedback is provided in the form of a display on one’s desk with a spider animation behaving according to the amount of caffeine one has taken in.
+        </p>
+       <a target="_blank" href="img/Moodboard IBM-1.jpg">
+         <img src="img/Moodboard IBM-1.jpg" ALIGN=”right” title="Full size" class="blogimg" width="400" height="300">
+       </a>
+       <a target="_blank" href="img/Spess.jpg">
+        <img src="img/Spess.jpg" ALIGN=”right” title="Full size" class="blogimg" width="500" height="300">
+      </a>
+     </div>
+    </div>
+    <div class="blog">
+      <div class="clearfix" style="padding:20px">
+      <h1 class="blog">End project Physical Computing</h1>
+       <p>For our end project for Physical Computing we made a keyboard with RGB lights. The sound is produced by a buzzer integrated in the system. The keyboard is made using capacitive sensors. In processing the notes and keys you play are shown with their corresponding colors. We thought that this would be a nice way to combine everything we have learned in the subject. Everything works very nice and we are glad with the result!</p>
+       <a target="_blank" href="img/endproject.jpg">
+         <img src="img/endproject.jpg" ALIGN=”right” title="Full size" class="blogimg" width="400" height="300">
+       </a>
+     </div>
+    </div>
+    <div class="blog">
+      <h1 class="blog">Sketching module 2</h1>
+      <h1 class="blog" style="float:right">26 Januari 2019</h1>
+      <div class="clearfix">
+        <a target="_blank" href="img/sketching1.jpg">
+          <img src="img/sketching1.jpg" title="Full size" class="blogimg" width="150" height="200" alt="Sketch of a bottle">
+        </a>
+        <a target="_blank" href="img/sketching2.jpg">
+          <img src="img/sketching2.jpg" title="Full size" class="blogimg" width="150" height="200" alt="Sketch of a blender">
+        </a>
+        <a target="_blank" href="img/sketching3.jpg">
+          <img src="img/sketching3.jpg" title="Full size" class="blogimg" width="200" height="150" alt="Letter cube">
+        </a>
+         <p>This module we had a new subject: Sketching. At first I didnt really know what to think of it, but later I really started to appriciate it. We started by just sketching straight lines. It seems really dull, but its actually quite hard. Thru the weeks it really felt like I was making progress in my sketching skills. Where I woudl first find it quite hard to make a nice cube of sphere, I later was able to make them and more complicated shapes with ease.</p>
+      </div>
+    </div>
+    <!-- <div class="blog">
+     <div class="clearfix" style="padding:20px">
+      <script src="https://home.et.utwente.nl/slootenvanf/div/processing.min.js"></script>
+      <canvas data-processing-sources="Animating_Text/Animating_Text.pde" width="1000" height="400" style="float:right"></canvas>
+      <h1 class="blog">Animating Text!</h1>
+      <p>This is the first assignment we had in programming of module 2. This time we had to make is so a text input is used by Processing and that the text is animated. You can input any sentence of text you want!</p>
+      </div>
+    </div> -->
+    <div class="blog">
+      <div class="clearfix" style="padding:20px">
+      <h1 class="blog">Dating nowadays</h1>
+       <p>Click <a href="VideoProject/index.html">here</a> to view our video project. It is a dating game where you need to make good choices to progress in your date. Bad choices however lead you to humiliation and failure.</p>
+       <p class="thick">Final Expo Module 1</p>
+       <p>It was really nice to see what everyone had done with their video project. Everyone had a real different approach. Some results were better than to other, meaning some didnt really work quite as well. Ours worked really good, which I was very happy with. Overall I really enjoyed the expo.</p>
+     </div>
+    </div>
+    <div class="blog">
+      <div class="clearfix" style="padding:20px">
+      <h1 class="blog">3D-printing workshop</h1>
+       <p>On 17 October I participated in a 3D printing workshop. This was held in Spiegel 1. First we got some information about how 3D printing works and how it came about. After that we had to make our own model of something we wanted in a program of our choosing. I chose to make a model of a headphone stand in Tinkercad. Tinkercad is a simple 3D modeling software from Autodesk. On the right you can see my model!</p>
+       <a target="_blank" href="img/headphonestand.png">
+         <img src="img/headphonestand.png" title="Full size" class="blogimg" width="400" height="200">
+       </a>
+     </div>
+    </div>
+    <div class="blog">
+      <div class="clearfix" style="padding:20px">
+      <h1 class="blog">Final project for Programming</h1>
+       <p>For programming we had to make an artwork on the UT interactive. We had to do this in Processing. You can check it out <a href="Final_Project.html">here</a>.</p>
+     </div>
+    </div>
+    <div class="blog">
+     <div class="clearfix" style="padding:20px">
+      <script src="https://home.et.utwente.nl/slootenvanf/div/processing.min.js"></script>
+      <canvas data-processing-sources="MyCreature/MyCreature.pde" width="400" height="400" style="float:right"></canvas>
+      <h1 class="blog">My Creature(s)</h1>
+      <p>On the right you can see a project made for Programming. The assignment was to make a creature. With each lecture I added new features and interactivity to it. Now it is not one, but many creatures. If you click on a creature it closes its eyes and mouth. Purpose of this assignment was, I think, to let you implement all knowledge from the lectures like mouse position, classes, arrays and shapes.</p>
+      </div>
+    </div>
+    <div class="blog">
+     <div class="clearfix" style="padding:20px">
+      <iframe src="https://editor.p5js.org/embed/Hk2pfpJYQ" width="404" height="408" style="float:right"></iframe>
+      <h1 class="blog">Reaction speed game</h1>
+      <p>On the right you can see a small game I made during the Javascript workshop I had September 19.<br>It is coded in "P5.js". In that workshop we came in contact with ways you can record the score of something and ways you can display multiple objects. When you click on a target it will display the time it took you to click it after it was generated. It also counts up the total number of targets you destroyed. I chose to make this because it fitted with the material we where given. Later I added extra stuff like the counter and soundeffects.</p>
+      </div>
+     </div>
+    <div class="blog">
+     <div class="clearfix" style="padding:20px">
+      <iframe src="https://editor.p5js.org/embed/H1ue3adKQ" width="404" height="408" style="float:right"></iframe>
+      <h1 class="blog">Starfall</h1>
+      <p>A small script I made in Programming class. It is made with an array of balls that all fall from the sky with different random speeds. The balls itself also have random sizes.</p>
+     </div>
+    </div>
+  </main>
+</section>
+
+<footer>
+  <div class="clearfix">
+    <a target="_blank" href="https://www.instagram.com/maxbiesheuvel/">
+      <img src="img/instagram.png" style="align: center;" width="30" height="30" alt="Instagram logo">
+    </a>
+  </div>
+</footer>
+
+</body>
+</html>
