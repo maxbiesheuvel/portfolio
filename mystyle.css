@@ -6,7 +6,7 @@
 
 body {
     background-color: White;
-    font-family: Roboto, Verdana, Helvetica, sans-serif;
+    font-family: Roboto, Bebas Neue, Verdana, Helvetica, sans-serif;
 }
 
 p {
@@ -73,7 +73,7 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
+li a: hover {
     background-color: #F9CF00;
 }
 
@@ -169,7 +169,7 @@ input[type=submit]:hover {
     padding: 20px;
 }
 
-.row:after {
+.row: after {
     content: "";
     display: table;
     clear: both;
